@@ -1,0 +1,35 @@
+To use git locally in PC
+do git config by going to git bash terminal in windows
+
+git config --global user.name "Syed"   -- typically the name of your git account or any name this will be set at global level
+git config --global user.email "your-email@example.com" -- typically the name of your github email account.
+git config --global credential.helper manager -- this is for caching or saving te credential
+
+this will be stored in cat /c/Users/<your-username>/.gitconfig
+
+From github web we can directly create a repo and create or commit file or folders or branch but if you want to work on 
+two ways. 
+1. create the repo maintain on git then cloning it and working with it in local with that repo
+2. create the repo or the foldername in you local PC then commit it locally there then push it to github main.
+
+1. Create a folder where you want to clone the repository the folder name is the repository
+go inside the folder and run
+
+-- git clone https:// paste the URL from the repo code in the github website
+
+all the files will be cloned in the local folder.
+
+because we did git clone a .git hidden folder will be created in the repo folder.
+
+-- run ls -a or powershell ls -Force
+
+then once the repository is cloned then check the status commands
+
+-- git status on freshly cloned command.
+
+
+
+First create the repo on git.
+create a folder similar to repo name on your local.
+On github portal add step will be removed and we can directly commit.
+the commands given to connect your local to git.
