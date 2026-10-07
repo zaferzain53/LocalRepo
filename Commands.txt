@@ -1,1 +1,2 @@
-This is feature1 version that is recently added
+This is feature1 version that is recently
+Adding line2 feature1
