@@ -1,6 +1,9 @@
 To use git locally in PC
 do git config by going to git bash terminal in windows
 
+On github portal add step will be removed and we can directly commit.
+
+
 git config --global user.name "Syed"   -- typically the name of your git account or any name this will be set at global level
 git config --global user.email "your-email@example.com" -- typically the name of your github email account.
 git config --global credential.helper manager -- this is for caching or saving te credential
@@ -27,9 +30,46 @@ then once the repository is cloned then check the status commands
 
 -- git status on freshly cloned command.
 
+it shows the file as untracked on the new file 
+and if on the same cloned file if you change anything then it shows modified status
+unmodified 
+or staged when we add the file but did not commit yet then.
 
+run command git add . this will make the status to staged and says changes ready to be committed.
 
-First create the repo on git.
+git commit -m "Added new txt file"    -- this will commit the changes in the local folder
+
+git push origin main   --- or you can write git push -u origin main  -- give it authorize for github for first time.
+
+once git push -u origin main then we can simply put git push so next time it will not ask full line origin main.
+
+2. Started point local folder to have git folder.
+
+First create the repo on git...
 create a folder similar to repo name on your local.
-On github portal add step will be removed and we can directly commit.
 the commands given to connect your local to git.
+get inside the local git folder as created.
+
+-- run git init command  -- this will create the .git folder in the local
+
+-- now add you project file in the folder.
+-- then same thing 
+-- run git status to see the untrack changes
+-- run git add . to add them to be committed as mentioned in 1.
+-- run git commit -m "Added new files"
+-- now we cant directly do a git push curreently we have commited the code to our local
+-- we need to add remote repo command to create a link to the repository in the git
+run command git remote add origin https://github.com/zaferzain53/LocalRepo.git
+-- then run command git remote -v to check the remote repository link. just to verify
+-- run the command to check which branch we are in
+-- git branch shows the current branches available look for the * one is the selected branch, it shows master initially
+-- run command git branch <branchname> to select this branch as current branch
+-- rename  branch command git branch -M main -- having current branch selected if run this command will rename it to main
+-- run command git push origin main --- it will be pushed to github.
+
+
+****** Branches ******
+
+-- run comman git checkout branchname to navigate to that branch, check by running git branch that specific branch will be with *
+-- run command git checkout -b branchname -- create a new branch.
+-- run command git checkout -d branchname -- delete the branch
